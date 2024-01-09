@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Tasks</h1>    
+    <ul id="task-list">
+    </ul>
+    <button onclick="javascript:step()">Step</button>
+    <h1>Add Task</h1>
+    <form onsubmit="javascript:addTask()">
+      <label for="title">Title</label>
+      <input name="title" id="task-title">
+      <label for="priority">Priority</label>
+      <input name="priority" type="number" id="task-priority">
+      <input type="submit" value="Submit">
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
