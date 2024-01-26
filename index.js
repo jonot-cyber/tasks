@@ -62,10 +62,10 @@ function main() {
 	var elem = document.createElement("li")
 	if (i == 0) {
 	    var bold = document.createElement("b")
-	    bold.innerText = tasks[i].title
+	    bold.innerText = `${tasks[i].title} (${tasks[i].priority})`
 	    elem.appendChild(bold)
 	} else {
-	    elem.innerText = tasks[i].title
+	    elem.innerText = `${tasks[i].title} (${tasks[i].priority})`
 	}
 	var removeButton = document.createElement("button")
 	removeButton.innerText = "X"
